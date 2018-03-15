@@ -10,7 +10,7 @@
         // sets src
         const taken = Math.floor(Math.log10(i))
         const fill = (new Array(digits-taken)).join('0')
-        let name = i < Math.pow(10, digits) ? fill + i : i
+        let name = i < Math.pow(10, digits-1) ? fill + i : i
         img.setAttribute('src', `${name}.jpg`)
 
         // set style
